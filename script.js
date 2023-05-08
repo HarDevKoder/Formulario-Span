@@ -10,6 +10,13 @@ function downloadJSAtOnload() {
   txtNombre.onfocus=()=>{
     cuadroResultado.style.display='none';
   }
+
+  window.addEventListener('keydown',(e)=>{
+    if(e.keyCode===13){
+      btnRegistrar.click();
+    }
+  })
+
   // Evento click al presionar boton
   btnRegistrar.addEventListener('click',()=>{
     if(txtNombre.value==''){
