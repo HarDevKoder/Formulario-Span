@@ -4,52 +4,52 @@
   box-sizing: border-box;
 }
 
-.html{
+.html {
   font-size: 10px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
-.container{
+.container {
   width: 90%;
   height: auto;
   margin: 20px auto;
 }
 
-.formulario{
-  border:1px solid silver;
-  width:100%;
-  margin: 0  auto;
+.formulario {
+  border: 1px solid silver;
+  width: 100%;
+  margin: 0 auto;
   padding: 10px;
 }
 
-.tituloFormulario{
+.tituloFormulario {
   font-size: 1.4em;
 }
 
-.data{
+.data {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.txtNombre{
+.txtNombre {
   width: 75%;
   margin-right: 5px;
   padding: 6px;
   font-size: 1.2em;
 }
 
-.txtNombre:focus{
+.txtNombre:focus {
   outline: none;
 }
 
-.btnRegistrar{
+.btnRegistrar {
   border: 1px solid black;
   width: fit-content;
   display: grid;
@@ -62,7 +62,7 @@ h1{
   background: rgb(164, 252, 252);
 }
 
-.cuadroResultado{
+.cuadroResultado {
   height: auto;
   font-size: 1.5em;
   text-align: center;

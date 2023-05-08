@@ -1,0 +1,12 @@
+@media (min-width: 1328px) {
+  body {
+    max-width: 1328px;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 30%;
+    height: auto;
+    margin: 20px auto;
+  }
+}
