@@ -12,12 +12,24 @@ function downloadJSAtOnload() {
   }
   // Evento click al presionar boton
   btnRegistrar.addEventListener('click',()=>{
-    // Muestro respuesta en el span
-    cuadroResultado.textContent=`Bienvenido ${txtNombre.value}`;
-    // Desoculto el span
-    cuadroResultado.style.display='block';
-    // Borro el cuadro de texto
-    txtNombre.value='';
+    if(txtNombre.value==''){
+      cuadroResultado.textContent=`Introduce Datos !`;
+      // Desoculto el span
+      cuadroResultado.style.display='block';
+      // Coloco Fondo Rojo al cuadro de respuesta
+      cuadroResultado.style.backgroundColor='red';
+      // Borro el cuadro de texto
+      txtNombre.value='';
+    }else{
+      // Muestro respuesta en el span
+      cuadroResultado.textContent=`Hola ${txtNombre.value}`;
+      // Desoculto el span
+      cuadroResultado.style.display='block';
+      // Coloco Fondo Rojo al cuadro de respuesta
+      cuadroResultado.style.backgroundColor='green';
+      // Borro el cuadro de texto
+      txtNombre.value='';
+    }
   })
 }
 if (window.addEventListener)
