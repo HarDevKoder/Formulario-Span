@@ -1,23 +1,21 @@
 //Encapsular el codigo JS Dentro de Funcion que espera a que se cargue el HTML y CSS
 function downloadJSAtOnload() {
   //Instancio elementos del dom
-  const txtNombre=document.getElementById('txtNombre');
-  const btnRegistrar=document.getElementById('btnRegistrar');
-  const spnRespuesta=document.getElementById('spnRespuesta');
-  //Asigno el foco al cuadro de texto
-  txtNombre.focus();
+  const txtNombre=document.getElementById('txtNombre'); //caja de texto
+  const btnRegistrar=document.getElementById('btnRegistrar'); //boton de Registro
+  const cuadroResultado=document.getElementById('cuadroResultado');
   // oculto span de respuestas al cargar pagina
-  spnRespuesta.style.display='none';
+  cuadroResultado.style.display='none';
   // oculto span de respuesta si se hace foco en el input
   txtNombre.onfocus=()=>{
-    spnRespuesta.style.display='none';
+    cuadroResultado.style.display='none';
   }
   // Evento click al presionar boton
   btnRegistrar.addEventListener('click',()=>{
     // Muestro respuesta en el span
-    spnRespuesta.textContent=`Bienvenido ${txtNombre.value}`;
+    cuadroResultado.textContent=`Bienvenido ${txtNombre.value}`;
     // Desoculto el span
-    spnRespuesta.style.display='block';
+    cuadroResultado.style.display='block';
     // Borro el cuadro de texto
     txtNombre.value='';
   })
