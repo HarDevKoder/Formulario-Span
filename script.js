@@ -14,6 +14,7 @@ function downloadJSAtOnload() {
   window.addEventListener('keydown',(e)=>{
     if(e.keyCode===13){
       btnRegistrar.click();
+      txtNombre.blur();
     }
   })
 
