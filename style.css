@@ -4,44 +4,60 @@
   box-sizing: border-box;
 }
 
-.container{
-  border: 1px solid #333;
-  width: 300px;
-  margin: 20px auto;
-  padding: 5px;
-  border-radius: 5px;
+.html{
+  font-size: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1{
   text-align: center;
 }
 
+.container{
+  background: black;
+  width: 80%;
+  height: 100vh;
+  margin: 20px auto;
+  padding: 20px;
+}
+
 .formulario{
-  display: flex;
+  width:60%;
+  margin: 0  auto;
+  background: yellow;
   padding: 5px;
+  border-radius: 5px;
+}
+
+.tituloFormulario{
+
+}
+
+.data{
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
 
 .txtNombre{
-  padding: 2px;
-}
+  width: 70%;
+  height: 100%;
+  margin-right: 5px;
 
-.boton{
-  display: flex;
-  align-items: flex-end;
-  margin-left: 5px;
 }
 
 .btnRegistrar{
-  cursor: pointer;
-}
-
-.spnRespuesta{
-  padding: 5px;
+  border: 1px solid black;
+  width: fit-content;
   display: grid;
   place-items: center;
-  background: green;
-  color: silver;
-  font-size: 1.2rem;
-  height: 30px;
-  text-align: center;
+  padding: 1px 4px;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+
+.resultados{
+  background:green;
+  height: 20px;
 }

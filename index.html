@@ -10,23 +10,16 @@
 <body>
   <h1>Formulario Basico</h1>
   <hr>
-
   <div class="container">
     <div class="formulario">
-      <div class="datos">
-        <p>Ingresa Nombre:</p>
-        <input type="text" class="txtNombre" id="txtNombre" autocomplete="off">
+      <label for="nombre" class="tituloFormulario">Ingresa Nombre:</label>
+      <div class="data">
+        <input type="text" class="txtNombre" id="txtNombre">
+        <div class="btnRegistrar">Registrar</div>
       </div>
-      <div class="boton">
-        <button class=btnRegistrar id="btnRegistrar">Registrar</button>
-      </div>
-    </div>
-    <div class="respuesta" id="respuesta">
-      <span class="spnRespuesta" id="spnRespuesta"></span>
+      <div class="resultados"></div>
     </div>
   </div>
-
-
   <script src="script.js" defer></script>
 </body>
 </html>
